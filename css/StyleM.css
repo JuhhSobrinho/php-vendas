@@ -1,0 +1,270 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/city.png");
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.494);
+    transform: translate(-50%,0%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    font-family:monospace;
+    font-size: 15px, 10px;
+    border-radius: 5px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+}
+.nav a{
+    height: 15px;
+    text-align: center;
+    align-items: center;
+    border: 0;
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    outline: none;
+    width: 80px;
+    color: white;
+    transition: 0.25s;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.nav a:hover{
+    width: 110px;
+    background: crimson;
+}
+
+
+/*/////////////////////////////////////////////////////////*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px; /* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000c5; /* Cor da thumb (barra deslizante) */
+    border-radius: 6px; /* Raio da borda da thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor do track (fundo da scrollbar) */
+}
+
+
+
+
+.main{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    overflow: hidden;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 30px;
+    height: 80%;
+}
+
+
+.card{
+    background-color: rgba(0, 0, 0, 0.631);
+    text-align: center;
+    width: 300px;
+    padding: 40px;
+    border-radius: 5px;
+}
+.card input[type = "text"],.card input[type = "number"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    outline: none;
+    width: 220px;
+    color: white;
+    transition: 0.25s;
+}
+
+.card input[type = "text"]:focus,.card input[type = "number"]:focus{
+    width: 240px;
+    border-color: crimson;
+}
+
+.card input[type = "submit"], .btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 7px 10px;
+    outline: none;
+    width: 170px;
+    color: white;
+    transition: 0.25s;
+}
+
+.card input[type = "submit"]:hover, .btn:hover{
+    width: 220px;
+    background: crimson;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn-telas{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+.card-compra{
+    background-color: rgba(0, 0, 0, 0.631);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 85vmax;
+    height: 70px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.dadosProduto,.card-compra input[type = "number"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    width: 220px;
+    height: 50px;
+    color: white;
+    transition: 0.25s;
+}
+
+.dadosProduto:focus,.card-compra input[type = "number"]:focus{
+    width: 240px;
+    border-color: crimson;
+}
+
+.card-compra input[type = "submit"], .btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 7px 10px;
+    outline: none;
+    width: 170px;
+    color: white;
+    transition: 0.25s;
+}
+
+.card-compra input[type = "submit"]:hover, .btn:hover{
+    width: 220px;
+    background: crimson;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.botoes-vendas{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.titulo{
+    margin-left: 10px;
+    width: 85vmax;
+    font-size: 25;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.card-parcela {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#card-pagamento{
+    width: 80%;
+}
+
+.card-dados-parcela{
+    background-color: #00000041;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-dados-pagamento{
+    color: white;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
