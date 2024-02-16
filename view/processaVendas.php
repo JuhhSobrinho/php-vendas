@@ -10,7 +10,7 @@ if (empty($_POST['Cod']) || empty($_POST['Produto']) || empty($_POST['Price']) |
 $cod = mysqli_real_escape_string($conexao, $_POST['Cod']);
 $produto = mysqli_real_escape_string($conexao, $_POST['Produto']);
 $price = mysqli_real_escape_string($conexao, $_POST['Price']);
-$vendedor = mysqli_real_escape_string($conexao, $_SESSION['usuario']);
+$vendedor = mysqli_real_escape_string($conexao, $_SESSION['idUser']);
 
 $action = $_POST['action'];
 

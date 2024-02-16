@@ -117,10 +117,10 @@ finalizarCompra.addEventListener('click', () => {
         elementoTexto.innerHTML  = textoDinamico;
         document.getElementById('seuElemento').appendChild(elementoTexto);
 
-        html2pdf(document.getElementById('seuElemento'), opcoes);
-        setTimeout(() => {
+        html2pdf(document.getElementById('seuElemento'), opcoes).then(() => {
             window.location = "../view/menu.php";
-        }, 200);
+        });
+        
         
     } else {
         alert('dados incorretos');
